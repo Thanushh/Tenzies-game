@@ -1,11 +1,11 @@
-import React,{useState} from "react";
+import React from "react";
 import Die from "./components/Die";
 import "./App.css";
 import {nanoid} from "nanoid"
 import Confetti from "react-confetti"
 
 export default function App() {
-  const [dice, setDice] = useState(allNewDice())
+  const [dice, setDice] = React.useState(allNewDice())
   const [tenzies, setTenzies] = React.useState(false)
     
     React.useEffect(() => {
